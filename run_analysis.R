@@ -1,11 +1,3 @@
-##########################################################################################################
-
-## Coursera Getting and Cleaning Data Course Project
-## Heather Wade
-## 2014-04-27
-
-# runAnalysis.r File Description:
-
 # This script will perform the following steps on the UCI HAR Dataset downloaded from 
 # https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip 
 # 1. Merge the training and the test sets to create one data set.
@@ -13,17 +5,6 @@
 # 3. Use descriptive activity names to name the activities in the data set
 # 4. Appropriately label the data set with descriptive activity names. 
 # 5. Creates a second, independent tidy data set with the average of each variable for each activity and each subject. 
-
-##########################################################################################################
-
-
-# Clean up workspace
-rm(list=ls())
-
-# 1. Merge the training and the test sets to create one data set.
-
-#set working directory to the location where the UCI HAR Dataset was unzipped
-setwd('/Users/heather/Documents/UCI HAR Dataset/');
 
 # Read in the data from files
 features     = read.table('./features.txt',header=FALSE); #imports features.txt
